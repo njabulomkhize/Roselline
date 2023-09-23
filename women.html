@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSePphn0PqJcCc0v0orCsLkQyqMOakDgS5Jqid7F8Aw&s" >
+    <title>Rosellin Clothing Brand</title>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+
+  
+    body{
+        margin: 0;
+        background-color: white;
+        height: auto;
+    }
+    #shirts{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin-bottom: 50px;
+        
+    }
+  
+
+    .container{
+        height: 18px;
+        width: 100%;
+        background-color: white;
+    }
+    .navbar{
+        width: 100%;
+        height: 55px;
+        background-color: white;
+        position: fixed;
+        box-shadow: 1px 1px 10px grey;
+        font-family: sans-serif;
+        text-transform: capitalize;
+    }
+
+    .navbar ul{
+      display: grid;
+      grid-template-columns: 400px 150px 150px 150px 300px 100px;
+    }
+
+    .navbar ul li{
+        list-style: none;
+        font-size: 15px;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        transition: 0.2s ease
+    }
+
+    .navbar ul li a:hover {
+        color: grey;
+       
+        
+    }
+
+    
+
+    .searchbar-navbar{
+    width: 130px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: rgb(128, 128, 128,0.20);
+    border: none;
+    padding-left: 15px;
+    transition: 0.3s;
+    
+   }
+   .searchbar-navbar:focus{
+    outline: none;
+    width: 150px;
+    height: 30px;
+   }
+
+    .shirts-first-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        column-gap: 40px;
+        row-gap: 60px;
+        width: 80%;
+        height: auto;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .box{
+        height: auto; width: 80%; 
+        padding-bottom: 50px;
+       
+
+    }
+
+    .box-image{
+        width: 100%; height: auto; 
+        min-height: 300px;
+        max-height: 300px;
+        border: 3px solid transparent; 
+        border-image: linear-gradient(to right , pink , blue); 
+        border-image-slice: 1;
+
+    }
+
+    #hats{
+        margin-top: 100px;
+    }
+
+    @media (max-width:600px){
+      .active{
+        display: none;
+      }
+
+      .home-btn{
+        text-transform: uppercase;
+        
+      }
+      .navbar ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+ 
+
+    .searchbar-navbar{
+    width: 130px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: rgb(128, 128, 128,0.20);
+    border: none;
+    padding-left: 15px;
+    transition: 0.3s;
+    
+   }
+   .searchbar-navbar:focus{
+    outline: none;
+    width: 150px;
+    height: 30px;
+   }
+    
+   .shirts-first-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        column-gap: 40px;
+        row-gap: 60px;
+        width: 80%;
+        height: auto;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .box{
+        height: 200px; width: 100%; 
+
+    }
+
+    .box-image{
+        width: 100%;
+        height: 200px;
+        border: none; 
+        border-radius: 2px;
+        
+    }
+
+   }
+
+   @media(max-width:340px){
+   
+    .shirts-first-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        column-gap: 40px;
+        row-gap: 60px;
+        width: 80%;
+        height: auto;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .box{
+        height: 300px; width: 100%; 
+
+    }
+
+    .box-image{
+        width: 100%;
+        height: 200px;
+        border: none; 
+        border-radius: 2px;
+        
+    }
+
+   }
+
+
+
+   </style>
+   
+</head>
+<body>
+
+<div class="container">
+    <a name="home"></a>
+
+    <div class="navbar">
+        
+        <ul>
+            <li class="active"><a href="#home"  ><span style="color: pink; text-transform: uppercase; font-size: 20px; font-style: italic;">Women</span></a></li>
+            <li ><a href="index.html" class="home-btn">Home</a></li>
+            <li class="active"><a href="" >shoes</a></li>
+            <li class="active"><a href="" >shirts</a></li>
+            <li class="active"><a href="" >Full set</a></li>
+            <li>
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="searchbar-navbar" placeholder="Search by the tittle">
+                </div>
+            </li>
+          
+        </ul>
+
+
+    </div>
+
+    
+
+
+</div>
+<div class="wrapper">
+
+
+   
+        <div id="scrollTarget" class="scroll-target">
+            <!-- Content to scroll to -->
+        <div id="shirts">
+            <p style="font-size: 25px; margin-top: 40px; margin-left: 55px; text-transform: uppercase;">shirts</p>
+
+            <div class="shirts-first-grid">
+                <div class="box" >
+                <img class="box-image" src="big-centered-logo.jpeg" alt=""   >
+                <p>Ladies Shirt</p>
+                <p style="color: green;">R170</p>
+                <p>Get 5% Off</p>
+                </div>
+                
+
+
+                <div class="box">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVFRISFRIYERgSERgVGBIVGBEREREYGBQZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISGjQhJCc3MTc0PTQ0NDQ0NDE0MTExNDQ0NjQ0NDE0NDQ0OjE0NDQ0NDQ0ND80NDQxMT80NDQ7Mf/AABEIAQUAwQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIDBAYHBQj/xABHEAACAQMABQcIBgYJBQAAAAABAgADBBEFBhIhMQdBUWFxkaETIlKBorHB0RQyYnKCkiMzQrLC8BckQ0RTVGPh4iVzk7O0/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAIxEBAQADAAEEAwADAAAAAAAAAAECAxExEiEyQSJRcRNCYf/aAAwDAQACEQMRAD8A69ERAREQEREBERARE1blHr3NOyetb1HpPSdWZlxkqTstxB6RBG0xOMaraz6RdXqVLl6gFVlG1sgFQBwwOub3o7StSqgIqNn4yq7ZLxdNOVkvW2RNYend/s3DDqbBxFJ66Bi1dmx0kYHZO/5J+nf8H/Y2eJyHWfW+7AK0a7UwG3uNnJ6AMjhNSTXbSe0Ab6qf/Hv5vR7ZLHKZTsQy13G8r6Lich1O1lvat1Sp1Ll6iNVwVOzggoTg4E69Oy9Qs4RETrhERAREQEREBERAREQEREBExrnSFBAS9anTA4l3RAO8zXb7lF0TT2v62tQqPq0lqVS3UCo2fHEDa5g6Zah5GqldlVHQq2SMkMMbhxJ6Oucn09yu1nBSzo+QBBHlquy9UbuKqPNU9ZLdkxNUdHmqhuqhapUqVG/SOS7sAcb2bfxBkM8vTj1PXj6suPb0Vo5KdJaa+cASSSMFizE5MuKalu+2m8Hip4H/AHnp2FvjMv1rXaHCYb3vW6cnsihrIuPORh1DBnn6T021QGmilQ3FjxI6N3CVNYyFsQPnFyyJMWm6w2reSfZG8EMBznZOcTR3fBDDpzOu6QsdrAPNOea0aMCMHRdkMcEcxJ35l+nL/Wqt2Pt6o9vUCp/Xrf76n2CJ32fOGplxsXNux/ZqJn84B8DPo+aIy5EREkiREQEREBERAREQERMPS+kEt6Fa4f6lGmzkc52RnA6ycD1wPD131wp2FNcAVa9T6lEnG4cXfG8KPE7ukjiGmtZr26YmvcOVJ3U0Jp0V6gi7j2nJ65h6Q0jVuKtS5rNtvUbJ9FRzIo5lA3ASwVgY4oLnOBKzQEuASvECylHBnQtRtIsaZtlUM1Ms4GcMyM2TjsJ8RNDmTZXdSm6VEc03Q5VxxB+PYeMhlj6pxPDL05ddotHcZzTImdTI5xiaxoDlAt6gVLpRQfh5RQTRfr3ZKdhyOubfQq29VQ1OtTqA86Oj+4zPddjTNmOTHdV6pisUzxnsC0A6/dMS8FFAWqVEpgc7sqAd5nLhXZlHjXZUHM5/r3c02anSTivnuRzZGFHcSe6bJrBrfaIClsPpD8PKEEUafXv+uezd1805tcVCxLMSzMSSx4knjLNeuy+qq9u2WemMJHdTtKxUg7iNxnQdFcq2kE2RWp0rlVGCSrUar9e0p2QfwTRMStRNDM7Ro/lXsnIFWnVtz6WFq0+9PO9mbro7SNG4QVKFVKyH9pCGAPQeg9RnzCZl6L0jXt38pQqvRbhtIcbXUyncw6iDA+nomtaiazC+tg7YWrSOxWQbhtY3Oo9Fhv6jkc02WAiIgIiICIiAnPOWnSBSySgDg3VdVP3EG2faCToc4py234e5trcHPkKJZugNVbcO3ZQfmgc8XhL3ylqlziVIeHZAqAlcpxKsQKTEnEYgA5k7Q44kYk4gXRdOODsOoMwltnycneek7zIxIxAM8iMSQIEASZVKTApxJzBkQNs5MNLm3v6aE4S6BoOObaPnUz27Qx+Mzvs+VaN0adSnVXjRqJUHajBx7p9Uo4YBhvDAEHpBGRAmIiAiIgIiIEO4UFmOAoJJPAADJJnzBrBpM3VzcXR/tqpZRzhB5qA9iqo9U7jyo6V+j2FVQcPckW68xw+ds/kD984Hs7vVAtjnI6M46RzyoPnB65CHgevHfLT+acdcDNWTLdJpdgRIkxARJjECIk4iBGIAkyQIESCJXKHaBac80VGwJQKg3nolIbaPUIEbG7HSd8+ktRb7y1hZ1CdoigqMecvT/Rtn1oZ84HiB1ztHIxfbVtcW5O+hcbQH2Kihv3leB0WIiAiIgIiYuk79LelVr1DspSRnY8+FGcDpJ4AdJgci5ZtJ7dzQtVORb0i7Dm26nAdoRR+ec9WZGkb97mtWuan1q7lyOZQdyqOpVAX1SwIFoJ9YSzXGQD6jMojfmWq67j3wItnmSswaDYMzUMC4FjEnajMBGJIgQIxBEkSMwGIxJJkZgGMxLh5kOZiXBgW138eAl9E5+mW7dM47/lMhoEUx53ZN85H7/YvnpE4FzQYdr0ztr7JeaLTEztAaQ+j3VrcZwKVdGY9CE7L+wzQPpqIiAiIgJburenUR6boHR1KsjAMrqRvBEuRA5dp3koXe9lV2OfyFYsy9i1N5H4ge2c70zoO5tX2Lii1InOyxwyOAcZVlJB5uvfPpWajr5RDfRSRkbTqfWFPwkcsvTj1LHH1ZccI2ZauF3GdfTVSyrDLUQp9JCaZ8Nx9Ynj6e1GtadN3WpVyFOAzIR4LITdjzqy6cu8jlQMzKLbpgiZ1AbhLVK+smQJUIExKZVAZiJTASCZMhoFmo8xXaXbg75RQoM7qiYLNwBOM4GceEHlftmGJWwzMmnoe5QYa3qjrCO6/mUES6ujax4UKh/BU+U52O8rElt1zkdM93R2rV3XfydOgS2yW84pTAAxknaI6RNqsOSe7fBrV6dEZ3hA9Z8eyAfWYll8Flnl0jUzSP0ixs6pO0xoqjnpdPMf2lPfPbnl6t6Dp2VBbamzuqszFnILMzHLHcAAM8wnqTrhERAREQE1vXhM0qR6K48UebJNf1z/U0x011x6leQ2fGp6vlGBoobhMPWwfoX7DM/RYwJ5muTYoVPun3TH9Nv24TXUh3BGDtHd2nI8MTKQbhPQ1wtRTvqyAY2RS8bem3xmAJvefV1ZMCSIExEQEplUQKZDSZBgYtwOBmRq8ha6oKOO0T6gjE+AlquN3ZPU1Dp7WkLReln/8AS5nLOx3G8vXZ9CDzB2TPuuHTMPQq+Yh6QPdMy74HsmP6bvth6r0x9JqsOaiR3svym3TWNU0/SXLdCoO8sfhNnmjV8Yzbr+dIiJapIiICIiAmua0ttPQp9G05Hcq/xTY5qtV9u4rMd+y2wvUE3H2trvlW6/jz9rdM/Lv6VWy7Ini6376NT7h909iu08bWvdQf7pmVrnlzXX8f9TuiOAWh/wDLSnhKd8ytNX3l7itX4eUYY7ERUHgsxKU3vPXhJkLJgJVKZVASDJkGBEiTIgWnHNPb5NaZOkaLc1OnXc9gt3HvYTxak2Xk5CrXvHJAK6Nr7I5yWKLu7M+M5fDsna6xoUfo0+6PdMu44GYehn/Rr2CZZ35mOeG37TqtgNcj7SHwabDNc0L5lww/xEPepyPAtNjmnVfxZts/KkREsVEREBERACafox8vUb0qjt3uTNwzNK0C+VB9Lf375n3/AE0aPt6FeiC38ialrxc7NN+pT7purrOZcpN1gCnzs3gN5/nrlcx7lItuXMbXOTuEu0xulmpxAl9ZsYlxJVKElcBERAREQIMiSZEClxulzRd0Uqo4YqGbYbHOrEAg9Wcd0pMxXH1h6x1TlnZx2Xl6+gtCVAUHZMsDDYmv6jXoqUUf0kBPbjeO/M2spvmSRt6xR5tWi32wv5gV+M2KazfthqbejUQ9zgzZpdpvmKN08UiIlygiIgIiIFq6fZSo3oox7lJmlavnzR2CblpD9VV/7T/umaboD6q9kz7/ADGnR4r334TivKFdbVzsZ+oufzH/AIzs9w2FJ6BPn7Wi427qu2c4cKPUo+OY1zuRsvMXm5y0yBMakN8yZoZlSSuUJK4CIiAiIgQZEkyICWK3MZelFRcgwOgcl195r0s/q3yPuvvHjtTqqzg2oN1sXSrnHlEK9pXzh4Bp3S3fKg9UzZTmVasb3GMDS5wp9R8ZtM1DTb+a3ZNvktPmobvEIiJeoIiICIiBZvBmnUHTTceyZpmrv1F7BN3rDKsOlT7pourG9F7BM+/zGjR4r1tK1Nmm56FPunzlc1Nt6j+k7N3sTO+a3Vti2qnPBD7p8/0/hO6fNrm7xJ/V6hLxlulzS4xl6hWkuS2kuQERIMCYkZgwEiIgUmDJMiBbtq5pVEqLxRw468HePXvE+iNFVg1NGByCoIPVifOdccDO2cnd1t2ND7ClPyMV9wEp2zxV2m+Y9LS28ETcpqOkF85B01FHewE26R0/aW/6IiJoZyIiAiIgCJoWqv1B2TfpoerSY2+pj75n3eY0aPFYvKG2LOsfsHxE4Ws7vr7S27SsOZaNRj+CmzDxAHrnCFktM9qjuvvGUhksZRTMkHfLlLJSVy2srzAmQZOZECIiBASJMiBEgyqRAs1+E6xyUVM2hHo1XHec/GcnrcJ0/kiqZo1l9GsfFVle34rdXybrdLmpRHTWT94TaprLLmvbj/UB7gT8Js0jp8VLd5hERLlBERAREQJE0jVsgqx6WJ7yZuV1U2EqP6CM3cpM03VlMJKN3mL9Hi1i6/VQtheNztSWmO2pVRfdmcGnYOVu6K21OkP7WurH7tNGPvZe6cgJ3yzX8Vez5LqHd65VR4y0Dul63k0F9ZWJQJXmAMRmRASJMiAzIzBgCAzESDAt1ROg8jtXz7pOgK3ftD+ETnlVpu3JHWxdVV9OiPZb/lIZ/FPX5dapr/WKXUzH2GmwTwgMXFHrLD2GnuyOrxf6lu8z+EREtVEREBERAwNOki3rY9A937Xhmaxq8+FHWJtmlGC0axPAUn3dPmndNS0IdlB1CZ93yjVo8VrXK+h8javzLXZT+JCf4ZybGTOz8qlm9SyV14UKq1GHSpDKe7aB9U5PRoI3fLtc7io2e2TBdN+7ol23WZx0Zng/qIz4yU0a4GcqR1Z+Un6ar6sBDKtky61Ij+TLZY+ie6OV1GzGxKTU+yfXsj4y29wBzeIjlF7YkbEtiv8AZPzkq7Hgh9eI5RVsQVlaU3PMB6/9peW0bnPxj01zrF2ZSyTOFp9rHqlFS3xuz4Yj006816c27kppE320P2aLA/iK/Kay9Mc5m/ck1th6tTHQvhkyGz2xWa/euoN+vo/eP7jT25rhcm4odG2fBGmxyGrxf6ltnvP4RES1UREQEREDx9aa+zbsOd3VfHaPgpng2CHAmy6X0WLgIGcoEYtgAHaJGN+fX3y3S0Kqrshzw44Eo2YZZZdaNeeOOPPt4usNHylnc08Z2qDqB1lTicJsNlgpzvwN0+k6uiFZGQucMpXOBkZGMzR6PJDbKAPpVY46UpfKWapce9V7cpl4c9pWxPPL60CN2QO+dFTkuojhd1fypKv6MaP+bqn8NP5S71RTxy+oEG4nJ6ACcTBrV134Vjv6lnXf6Lrf/NVT+FJaqclNA8Luon3UpfEGPVDjjVZmxzL4zceSzVi0vmuvpKtUNEU9lQzU1w+3liVIJPmibaeSC3P98rE9JWkT7psOpmpVLRzVmSs9U1lRTthBs7BYjGz96ctdji3KBoyhaX1W3oB0REpnZLMxDMgY4LbyN449c8RG/wBRh2id21p5N6F9cNdPcVKTMqqVRaZXzRgHfPKXkdth/fK35KPyiUcrobWRip+58p6NNTuy54fZ+U6OnJFbg5+l1vyUflMmnyW0Ac/Sqh7UpTvqjnHMUdAMM/8APqEtVa1PO7ab1YnVf6MLf/MP+SnLdXkroN/eqo7Fpx6occfuHPRs4HDieE6pyZWJS2Wp/iecB0Dml5+SO2Ix9LqgdSUt/hNx0PoFLaklFXZgihQSFBOBjmlez8pyLNdmNvWA1ULUpN0VVHedn4zZp5NzoNX/ALRhvzkAbjPWkNeNx71PZljlzhERLFRERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/Z" alt="" class="box-image"  >
+                    <p>Ladies Shirt</p>
+                    <p style="color: red;">R0</p>
+                    <p>Get 5% Off</p>
+                </div>
+
+
+                <div class="box">
+                <img src="https://plainbulktshirts.co.za/wp-content/uploads/2023/04/GreyTShirts.png" alt="" class="box-image" >
+                <p>Ladies Shirt</p>
+                <p style="color: red;">R0</p>
+                <p>Get 5% Off</p>
+                
+                </div>
+
+
+                <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-bqXwrrlHKtjaRo8JUOmsALMuQ-SBqdUvQ&usqp=CAU" alt="" class="box-image" >
+                <p>Ladies Shirt</p>
+                <p style="color: Red;">R0</p>
+                <p>Get 5% Off</p>
+                </div>
+                <div class="box">
+                <img src="https://energeticwears.com/wp-content/uploads/2021/12/1-54.jpg" class="box-image"  alt="" >
+                <p>Ladies Shirt</p>
+                <p style="color: red;">R0</p>
+                <p>Get 5% Off</p>
+                </div>
+                <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHo0w8z3raAKsaTREIkr1aR3OvshAaQLHSVw&usqp=CAU" alt="" class="box-image" >
+                <p>Ladies Shirt</p>
+                <p style="color: red;">R0</p>
+                <p>Get 5% Off</p>
+            
+                </div>
+
+                <div class="box" >
+                    <img class="box-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPuUcpex_zcIU6Q5YkDDq9wslxbFWJt4Fivw&usqp=CAU" alt=""   >
+                    <p>Ladies Shirt</p>
+                    <p style="color: red;">R0</p>
+                    <p>Get 5% Off</p>
+                    </div>
+                    
+    
+    
+                    <div class="box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_5xluSPLBeYw2rE4-n8ShO0nVhha1ri-tAQ&usqp=CAU" alt="" class="box-image"  >
+                        <p>Ladies Shirt</p>
+                        <p style="color: red;">R0</p>
+                        <p>Get 5% Off</p>
+                    </div>
+    
+    
+                    <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3wFDF1ugqgnIJHKMSySDaakdM9JJ8axl9Sg&usqp=CAU" alt="" class="box-image" >
+                    <p>Ladies Shirt</p>
+                    <p style="color: red;">R170</p>
+                    <p>Get 5% Off</p>
+                    
+                    </div>
+    
+    
+                    <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCW40wQpfSlT_VBOKCgGuo870ZmO-iYOR64A&usqp=CAU" alt="" class="box-image" >
+                    <p>Ladies Shirt</p>
+                    <p style="color: red;">R0</p>
+                    <p>Get 5% Off</p>
+                    </div>
+                    <div class="box">
+                    <img src="https://img.freepik.com/premium-photo/friendship-t-shirt-design-happy-people-concept-two-smiling-girls-white-blank-t-shirts-showing-heart-with-hands_380164-46287.jpg" class="box-image"  alt="" >
+                    <p>Ladies Shirt</p>
+                    <p style="color: red;">R0</p>
+                    <p>Get 5% Off</p>
+                    </div>
+                    <div class="box">
+                    <img src="picsix.png" alt="" class="box-image" >
+                    <p>Ladies Shirt</p>
+                    <p style="color: red;">R0</p>
+                    <p>Get 5% Off</p>
+                
+                    </div>
+
+
+
+
+
+
+                    <div class="box" >
+                        <img class="box-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8wEdBBjX-ucJZVoil8yicpAtX2-7FiOCccNi9tGdaAptUXKGt_a1E84th4Gr4gQD09w&usqp=CAU" alt=""   >
+                        <p>Ladies Shirt</p>
+                        <p style="color: red;">R0</p>
+                        <p>Get 5% Off</p>
+                        </div>
+                        
+        
+        
+                        <div class="box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS89H4sXgOiHut1jNhRBbO9HXon0Zwd1bQ4zMT9_80bj7GhXruRJrdcjhZB-KhdhA010A&usqp=CAU" alt="" class="box-image"  >
+                            <p>Ladies Shirt</p>
+                            <p style="color: red;">R0</p>
+                            <p>Get 5% Off</p>
+                        </div>
+        
+        
+                        <div class="box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS51MSvPDLzpzNuahC4ZwZWZXBZ6a8KuY8shgm2_GjfFYrjFTH_Aq21RO3Qx-XyWa4VUho&usqp=CAU" alt="" class="box-image" >
+                        <p>Ladies Shirt</p>
+                        <p style="color: red;">R0</p>
+                        <p>Get 5% Off</p>
+                        
+                        </div>
+        
+        
+                        <div class="box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJQuqr6CSAEqnHJ7ULc_GGSc6ozPnOuQE1g&usqp=CAU" alt="" class="box-image" >
+                        <p>Ladies Shirt</p>
+                        <p style="color: red;">R0</p>
+                        <p>Get 5% Off</p>
+                        </div>
+                        <div class="box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsy747KcqWb7i7AEVRiS2aUHhAiNiKR-pEHT8UHG-1pTj74DNhIaOGcoD-ObsBZk4fvlk&usqp=CAU" class="box-image"  alt="" >
+                        <p>Ladies Shirt</p>
+                        <p style="color: red;">R0</p>
+                        <p>Get 5% Off</p>
+                        </div>
+                        <div class="box">
+                        <img src="https://previews.123rf.com/images/alenkasm/alenkasm1910/alenkasm191000168/131034164-group-of-four-young-diverse-girls-wearing-blank-white-tshirt-and-jeans-posing-against-rough-street.jpg" alt="" class="box-image" >
+
+                        <p>Ladies Shirt</p>
+                        <p style="color: red;">R0</p>
+                        <p>Get 5% Off</p>
+                    
+                        </div>
+
+
+
+
+
+                        <div class="box" >
+                            <img class="box-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSis5MtBJkSajReg7repiJOQbdWfof3w-59NnpX0K2CzKRpJ_boNEVyIX_n0kWP_bFGNls&usqp=CAU" alt=""   >
+                            <p>Ladies Shirt</p>
+                            <p style="color: red;">R0</p>
+                            <p>Get 5% Off</p>
+                            </div>
+                            
+            
+            
+                            <div class="box">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdXXHiWcH7hJ_UmIgiIV-isxO5-BzOX8t4eSBfjQnWhy8dLx7L26I0OlBpXgVTJQuwvI&usqp=CAU" alt="" class="box-image"  >
+                                <p>Ladies Shirt</p>
+                                <p style="color: red;">R0</p>
+                                <p>Get 5% Off</p>
+                            </div>
+            
+            
+                            <div class="box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOYLRumBEKs_iDST-_PR6g_ME1_PzuQJHEbw&usqp=CAU" alt="" class="box-image" >
+                            <p>Ladies Shirt</p>
+                            <p style="color: red;">R0</p>
+                            <p>Get 5% Off</p>
+                            
+                            </div>
+            
+            
+                            <div class="box">
+                            <img src="https://i.pinimg.com/474x/2f/90/ba/2f90baf4469d95fda0503f46f2aa8101.jpg" alt="" class="box-image" >
+                            <p>Ladies Shirt</p>
+                            <p style="color: red;">R0</p>
+                            <p>Get 5% Off</p>
+                            </div>
+                          
+                                
+                
+                
+                           
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+       
+        
+
+
+
+
+
+        </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
